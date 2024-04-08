@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-[600px] mx-auto border border-[#a7a7a7] my-[30px]">
+        <div class="py-[12px] flex items-center justify-between px-[15px] border-[#a7a7a7] border-b bg-[#f0f0f0]">
+            <div class="font-bold text-[18px]">Quiz App</div>
+            <div class="py-[5px] bg-[#626262] px-[7px] flex items-center space-x-[6px] rounded-[6px] text-white">
+                <span>Time: </span>
+                <span id="time" class="text-[14px] py-[3px] px-[4px] bg-[#ffa722] rounded-[6px]">10</span>
+            </div>
+        </div>
+        <div class="px-[28px] py-[33px]">
+            <div id="quizTitle">
+                <!-- <b>1.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum nam autem incidunt explicabo
+                voluptas tenetur nihil laborum tempora ratione cum mollitia similique ducimus obcaecati, amet nisi
+                magnam sint repellat? -->
+            </div>
+            <div id="quizAnswers" class="pt-[16px] space-y-[10px]">
+                <!-- <button class="border rounded-[5px] border-[#a7a7a7] py-[9px] px-[12px] w-full text-left">
+                    <b>a.</b> Lorem ipsum dolor sit amet consectetur.
+                </button>
+                <button class="border rounded-[5px] bg-[#d4ffba] border-[#a7a7a7] py-[9px] px-[12px] w-full text-left">
+                    <b>b.</b> Lorem ipsum dolor sit amet consectetur.
+                </button>
+                <button class="border rounded-[5px] bg-[#ffdede] border-[#a7a7a7] py-[9px] px-[12px] w-full text-left">
+                    <b>c.</b> Lorem ipsum dolor sit amet consectetur.
+                </button> -->
+            </div>
+        </div>
+        <div class="py-[12px] flex items-center justify-between px-[15px] border-[#a7a7a7] border-t bg-[#f0f0f0]">
+            <div class="bg-[#ffa722] px-[12px] py-[8px] rounded-[8px] text-white">
+                <span id="currentQuestion"></span> <span> / </span> <span id="totalQuestion"></span>
+            </div>
+            <div class="bg-[#2260ff] text-white h-[35px] rounded-[8px] px-[15px] inline-flex items-center">
+                <button id="nextQuestion">
+                    Next Question
+                </button> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <DIV class="inset-0 bg-white fixed hidden flex items-center justify-center" id="startContent">
+        <div id="startBtn" class="bg-[#ffa722] text-white h-[50px] rounded-[8px] px-[28px] inline-flex items-center">
+            Start
+        </div>
+    </DIV>
+
+    <script src="./assets/js/ui.js"></script>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
